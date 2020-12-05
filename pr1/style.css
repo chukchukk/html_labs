@@ -1,0 +1,28 @@
+h1 {
+    margin: 1em 0 0.5em 0;
+    color: #343434;
+    font-weight: normal;
+    font-family: 'Ultra', sans-serif;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-shadow: 0 2px #ffffff, 0 3px #777;
+}
+
+h2 {
+    margin: 1em 0 0.5em 0;
+    color: aqua;
+    font-weight: normal;
+    line-height: 40px;
+    font-family: 'Orienta', sans-serif;
+}
+
+h3 {
+    margin: 1em 0 0.5em 0;
+    color: aquamarine;
+    line-height: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: 'Orienta', sans-serif;
+    letter-spacing: 1px;
+    font-style: italic;
+}

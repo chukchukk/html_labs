@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example6</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .column {
+            margin: 0 25px;
+            top: 50px;
+            position: relative;
+            height: 100px;
+            width: 30px;
+        }
+
+        .column::after {
+            content: attr(data);
+            position: absolute;
+        }
+
+        .column::before {
+            position: absolute;
+            bottom: 0;
+            content: '';
+            width: 30px;
+        }
+
+        .column.col1::before {
+            height: 10%;
+            background-color: red;
+        }
+
+        .column.col1::after {
+            bottom: 10%;
+        }
+
+        .column.col2::before {
+            height: 25%;
+            background-color: rgb(255, 123, 0);
+        }
+
+        .column.col2::after {
+            bottom: 25%;
+        }
+
+        .column.col3::before {
+            height: 50%;
+            background-color: yellow;
+        }
+
+        .column.col3::after {
+            bottom: 50%;
+        }
+
+        .column.col4::before {
+            height: 75%;
+            background-color: greenyellow;
+        }
+
+        .column.col4::after {
+            bottom: 75%;
+        }
+
+        .column.col5::before {
+            height: 100%;
+            background-color: green;
+        }
+
+        .column.col5::after {
+            bottom: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="column col1" data="10%"></div>
+    <div class="column col2" data="25%"></div>
+    <div class="column col3" data="50%"></div>
+    <div class="column col4" data="75%"></div>
+    <div class="column col5" data="100%"></div>
+</body>
+</html>

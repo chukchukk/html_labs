@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example 7-2</title>
+    <style>
+        .required{
+            height: 25px;
+            width: 25px;
+        }
+        input{
+            height: 25px;
+        }
+        input:valid{
+            background: url("https://fb.ru/misc/i/gallery/87586/2526288.jpg");
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        input:invalid{
+            background: url("https://sysar.ru/wp-content/uploads/2018/03/net.jpg");
+            background-size: 15px;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <p>Заполните форму (все поля  обязательны)</p>
+    <p>Имя пользователя: <input type="text" required pattern="[a-zA-ZА-Яа-я]*"></p>
+    <p>Сколько вам лет?: <input type="number" required min="1" max="150"></p>
+    <p>Вы учитесь или работаете?: <input type="text" required pattern="[a-zA-Zа-яА-Я]*"></p>
+    <p>Сколько у вас свободного времени?: <input type="text" required></p>
+    <p>Что вы обычно делаете в свободное время?: <input type="text" required></p>
+    <p><button>Отправить</button></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example 3</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-bottom: 50px;
+            width: 60%;
+        }
+
+        .table_1 {
+            border: rgb(45, 104, 138) 2px solid;
+        }
+
+        .table_1 tbody{
+            border: none;
+        }
+
+        .table_1 tr {
+            height: 35px;
+        }
+
+        .table_1 tr:not(:first-child){
+            background-color: rgb(109, 204, 241);
+        }
+
+
+        .table_1 tr:not(:first-child) td {
+            border-top: white 3px dotted;
+        }
+
+        .table_1 tr:hover {
+            cursor: pointer;
+            background-color: rgb(13, 158, 226);
+        }
+
+        .table_2 {
+            text-align: center;
+            background-color: rgb(211, 227, 255);
+            border-color: rgb(40, 126, 208);
+            border-style: solid;
+            border-width: 5px 1px;
+        }
+
+        .table_2 td {
+            height: 35px;
+        }
+
+        .table_2 tr:first-child {
+            color: rgb(21, 38, 93);
+        }
+
+        .table_2 tr{
+            color: rgb(97, 122, 205);
+        }
+    </style>
+</head>
+<body>
+    <table class="table_1">
+        <tbody>
+            <tr>
+                <td>Company</td>
+                <td>Q1</td>
+                <td>Q2</td>
+                <td>Q3</td>
+                <td>Q4</td>
+            </tr>
+
+            <tr>
+                <td>Microsoft</td>
+                <td>20.3</td>
+                <td>30.5</td>
+                <td>23.5</td>
+                <td>40.3</td>
+            </tr>
+
+            <tr>
+                <td>Google</td>
+                <td>50.2</td>
+                <td>40.63</td>
+                <td>45.23</td>
+                <td>39.3</td>
+            </tr>
+
+            <tr>
+                <td>Apple</td>
+                <td>25.4</td>
+                <td>30.2</td>
+                <td>33.3</td>
+                <td>36.7</td>
+            </tr>
+
+            <tr>
+                <td>IBM</td>
+                <td>20.4</td>
+                <td>15.6</td>
+                <td>22.3</td>
+                <td>29.3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="table_2">
+        <tbody>
+            <tr>
+                <td>Comedy</td>
+                <td>Adventure</td>
+                <td>Action</td>
+                <td>Children</td>
+            </tr>
+
+            <tr>
+                <td>Scary Movie</td>
+                <td>Indiana Jones</td>
+                <td>The Punisher</td>
+                <td>Wall-E</td>
+            </tr>
+
+            <tr>
+                <td>Epic Movie</td>
+                <td>Star Wars</td>
+                <td>Bad Boys</td>
+                <td>Madagascar</td>
+            </tr>
+
+            <tr>
+                <td>Spartan</td>
+                <td>LOTR</td>
+                <td>Die Hard</td>
+                <td>Finding Nemo</td>
+            </tr>
+
+            <tr>
+                <td>Dr. Dolittle</td>
+                <td>The Mummy</td>
+                <td>300</td>
+                <td>A Bug`s Life</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

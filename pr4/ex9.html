@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        button {
+            border: none;
+            font-size: 15pt;
+            padding: 5px 10px;
+        }
+
+        .button_1 {
+            -webkit-box-shadow: 24px 23px 28px 18px rgba(9, 141, 242, 0.17) inset;
+            -moz-box-shadow: 24px 23px 28px 18px rgba(9, 141, 242, 0.17) inset;
+            box-shadow: 24px 23px 28px 18px rgba(9, 141, 242, 0.17) inset;
+            background: rgb(247,1,249);
+            background: -moz-linear-gradient(132deg, rgba(247,1,249,0.8410714627647934) 6%, rgba(212,221,9,0.5161414907759979) 46%, rgba(208,0,255,0.7234244039412641) 97%);
+            background: -webkit-linear-gradient(132deg, rgba(247,1,249,0.8410714627647934) 6%, rgba(212,221,9,0.5161414907759979) 46%, rgba(208,0,255,0.7234244039412641) 97%);
+            background: linear-gradient(132deg, rgba(247,1,249,0.8410714627647934) 6%, rgba(212,221,9,0.5161414907759979) 46%, rgba(208,0,255,0.7234244039412641) 97%);
+        }
+
+        .button_1:hover {
+            cursor: pointer;
+            box-shadow: inset 0 0 4px 4px rgba(238, 133, 133, 0.5);
+            transform: rotateX(90deg);
+            transition: 1s;
+        }
+        .button_2 {
+            -webkit-box-shadow: -84px 48px 38px 18px rgba(242, 9, 9, 0.17) inset;
+            -moz-box-shadow: -84px 48px 38px 18px rgba(242, 9, 9, 0.17) inset;
+            box-shadow: -84px 48px 38px 18px rgba(242, 9, 9, 0.17) inset;
+            background: rgb(34,193,195);
+            background: -moz-radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            background: -webkit-radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+            background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+        }
+
+        .button_2:hover {
+            cursor: pointer;
+            -webkit-box-shadow: -84px 48px 38px 18px rgba(242, 9, 9, 0.17) inset;
+            -moz-box-shadow: -84px 48px 38px 18px rgba(242, 9, 9, 0.17) inset;
+            box-shadow: -84px 48px 38px 18px rgba(242, 9, 9, 0.17) inset;
+            transform: scaleX(2);
+            transition: 1.5s;
+        }
+        .button_3 {
+            -webkit-box-shadow: 13px 48px 38px 18px rgba(0, 0, 0, 0.23) inset;
+            -moz-box-shadow: 13px 48px 38px 18px rgba(0, 0, 0, 0.23) inset;
+            box-shadow: 13px 48px 38px 18px rgba(0, 0, 0, 0.23) inset;
+            background: rgb(254,255,105);
+            background: -moz-linear-gradient(90deg, rgba(254,255,105,1) 0%, rgba(78,216,217,1) 48%, rgba(1,255,0,0.8802871490393032) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(254,255,105,1) 0%, rgba(78,216,217,1) 48%, rgba(1,255,0,0.8802871490393032) 100%);
+            background: linear-gradient(90deg, rgba(254,255,105,1) 0%, rgba(78,216,217,1) 48%, rgba(1,255,0,0.8802871490393032) 100%);
+        }
+
+        .button_3:hover {
+            cursor: pointer;
+            -webkit-box-shadow: 13px 48px 38px 18px rgba(0, 0, 0, 0.23) inset;
+            -moz-box-shadow: 13px 48px 38px 18px rgba(0, 0, 0, 0.23) inset;
+            box-shadow: 13px 48px 38px 18px rgba(0, 0, 0, 0.23) inset;
+            transform: skewY(45deg);
+            transition: 1s;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="button_1">first</button>
+    <button class="button_2">second</button>
+    <button class="button_3">third</button>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example 1</title>
+    <style>
+        .first::before{
+            content: '\2018';
+        }
+        .first::after{
+            content: '\2019';
+        }
+        .second::before, .second::after{
+            content: '\201A';
+        }
+        .third::before{
+            content: '\201C';
+        }
+        .third::after{
+            content: '\201D';
+        }
+        .fourth::before, .fourth::after{
+            content: '\201E';
+        }
+        .fifth::before{
+            content: '\00AB';
+        }
+        .fifth::after{
+            content: '\00BB';
+        }
+        .first{
+            letter-spacing: 3px;
+            color: #c400ff;
+            font-size: medium;
+            font-family: "Roboto Light";
+            background: rgba(186,253,255,0.55);
+            width: fit-content;
+        }
+        .second{
+            font-style: italic;
+            color: #0048ff;
+            font-size: medium;
+            font-family: "Yu Gothic Medium";
+            background: rgb(255, 238, 186);
+            width: fit-content;
+        }
+        .third{
+            letter-spacing: 2px;
+            color: #ff0000;
+            font-size: medium;
+            font-family: "Calibri Light";
+            font-size: large;
+            background: rgba(71, 84, 84, 0.55);
+            width: fit-content;
+        }
+        .fourth{
+            color: #ff7700;
+            font-size: medium;
+            font-family: Tahoma;
+            background: rgb(201, 255, 186);
+            width: fit-content;
+        }
+        .fifth{
+            letter-spacing: 3px;
+            color: #2b5805;
+            font-size: medium;
+            font-family: "Monotype Corsiva";
+            background: rgb(193, 186, 255);
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="first">Левая одиночная и правая одиночная кавычки</li>
+        <li class="second">Нижняя одиночная кавычка</li>
+        <li class="third">Левая и правая двойные кавычки</li>
+        <li class="fourth">Нижняя двойная кавычка</li>
+        <li class="fifth">Левая и правая двойные угловые кавычки</li>
+    </ul>
+</body>
+</html>

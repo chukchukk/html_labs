@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .cards:after{
+            content: '\2663''\2660''\2665''\2666'; //'\2663' - крести, '\2660' - пики, '\2665' - черви, '\2666' - буби
+        }
+        .money:after{
+            content: '\FFE0 ''\FFE1 ''\20BD ''\0024'; //'\FFE0' - цент, '\FFE1' - фунт стерлингов, '\20BD' - рубль, '\0024' - доллар
+        }
+        .signs:after{
+            content: '\2122 ''\00A9 ''\00AE'; //'\2122' - торговая марка, '\00A9' - copyrigth, '\00AE' - зарегестрированная торговая марка
+        }
+        .fraction:after{
+            content: '\00BC ''\00BD ''\00BE'; //'\00BC' - 1/4, '00BD' - 1/2, '\00BE' - 3/4
+        }
+        .signs2:after{
+            content: '\00B6 ''\2013 ''\00A7 ''\2014'; //'\00B6' - абзац, '\2013' - тире, '\00A7' - параграф, '\2014' - длинное тире
+        }
+        .inequality:after{
+            content: '\2260';   //Неравенство
+        }
+        .corner:after{
+            content: '\2220';   //Угол
+        }
+        .infinity:after{
+            content: '\221E';   //Знак бесконечности
+        }
+        .equally:after{
+            content: '\2248';   //Почти равно
+        }
+        .integral:after{
+            content: '\222B';   //Интеграл
+        }
+        .grec:after{
+            content: '\0391''\0392''\0393''\0394''\0395'; //'\0391' - 1-ая буква, '\0392' - 2-ая, '\0393' - 3-ая, '\0394' - 4-ая, '\0395' - 5-ая
+        }
+    </style>
+    <title>Example 4-2</title>
+</head>
+<body>
+    <ul>
+        <li><span class="cards">Это карты: </span>.</li>
+        <li><span class="grec">Первый пять букв греческого алфавита: </span>.</li>
+        <li><span class="money">Это денежные единицы: </span>.</li>
+        <li><span class="signs">Специальные знаки: </span>.</li>
+        <li><span class="fraction">Это дроби: </span>.</li>
+        <li><span class="signs2">Знаки абзаца, тире, параграфа и длинного тире: </span>.</li>
+        <li><span class="inequality">Неравенство: </span><span class="corner">, угол: </span>
+            <span class="infinity">, знак бесконечности: </span><span class="equally">, почти равно: </span>
+            <span class="integral">, интеграл: </span>.
+        </li>
+    </ul>
+</body>
+</html>

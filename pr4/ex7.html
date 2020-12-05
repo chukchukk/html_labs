@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .under{
+            display: flex;
+            align-items: baseline;
+        }
+       .under span{
+           margin-right: 1em;
+       }
+       .big_text{
+           font-size: 2em;
+           font-weight: bold;
+       }
+       .text{
+           font-size: 1.1em;
+           background-color: #d4d4d4;
+           padding: 5px;
+           border-radius: 20px;
+       }
+       .weather_container{
+           display: flex;
+           margin-top: 20px;
+       }
+       .weather_item{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           margin-right: 15px;
+           min-width: 80px;
+       }
+       .weather_item img{
+           width: 7vh;
+           height: 7vh;
+       }
+       .title, .day{
+           font-weight: bold;
+           font-size: 1.2em;
+       }
+       .date, .night, .description{
+           color: darkgrey;
+           font-size: 0.9em;
+       }
+       .night{
+           margin-bottom: 10px;
+       }
+       .weather_item:hover{
+           cursor: pointer;
+           border: 1px solid #000000;
+       }
+    </style>
+</head>
+<body>
+    <div class="under">
+        <span class="big_text">Прогноз погоды</span>
+        <span class="text">Подробный прогноз на 10 дней</span>
+        <span class="text">На месяц</span>
+    </div>
+
+    <div class="weather_container">
+        <div class="weather_item">
+            <span class="title">Сегодня</span>
+            <span class="date">29 сент</span>
+            <img src="resources/cloudy.png" alt="погода">
+            <span class="day">днем +17&deg;</span>
+            <span class="night">ночью +17&deg;</span>
+            <span class="description">Облачно</span>
+        </div>
+        <div class="weather_item">
+            <span class="title">Ср</span>
+            <span class="date">30 сент</span>
+            <img src="resources/cloudy.png" alt="погода">
+            <span class="day">+19&deg;</span>
+            <span class="night">+11&deg;</span>
+            <span class="description">Облачно</span>
+        </div>
+        <div class="weather_item">
+            <span class="title">Чт</span>
+            <span class="date">1 окт</span>
+            <img src="resources/sunny.png" alt="погода">
+            <span class="day">+20&deg;</span>
+            <span class="night">+10&deg;</span>
+            <span class="description">Малооблачно</span>
+        </div>
+        <div class="weather_item">
+            <span class="title">Пт</span>
+            <span class="date">2 окт</span>
+            <img src="resources/sunny.png" alt="погода">
+            <span class="day">+20&deg;</span>
+            <span class="night">+10&deg;</span>
+            <span class="description">Малооблачно</span>
+        </div>
+        <div class="weather_item">
+            <span class="title hol">Сб</span>
+            <span class="date">3 окт</span>
+            <img src="resources/rainy.png" alt="погода">
+            <span class="day">+15&deg;</span>
+            <span class="night">+9&deg;</span>
+            <span class="description">Дождь</span>
+        </div>
+        <div class="weather_item">
+            <span class="title hol">Вс</span>
+            <span class="date">4 окт</span>
+            <img src="resources/rainy.png" alt="погода">
+            <span class="day">+13&deg;</span>
+            <span class="night">+7&deg;</span>
+            <span class="description">Дождь</span>
+        </div>
+        <div class="weather_item">
+            <span class="title">Пн</span>
+            <span class="date">5 окт</span>
+            <img src="resources/cloudy.png" alt="погода">
+            <span class="day">+10&deg;</span>
+            <span class="night">+15&deg;</span>
+            <span class="description">Ветренно</span>
+        </div>
+    </div>
+</body>
+</html>
