@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="button" onclick="f1(this)" value="Кнопка 1" id="first">
+    <input type="button" onclick="f2()" value="Кнопка 2">
+    <script>
+        function f1(but){
+            but.disabled = true;
+
+        }
+        function f2(){
+            but = document.getElementById('first');
+            but.disabled = false;
+        }
+    </script>
+</body>
+</html>

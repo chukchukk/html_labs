@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Первый абзац с текстом</p>
+    <p>Второй абзац с тектом</p>
+    <p>Третий абзац с текстом</p>
+    <input type="button" value="Изменить" onclick="change()">
+    <script>
+        function change(){
+            var ps = document.getElementsByTagName('p');
+            for(i = 0; i < ps.length - 1; i++){
+                ps[i].innerHTML = 'Текст изменили, приносим свои извинения';
+            }
+        }
+    </script>
+</body>
+</html>

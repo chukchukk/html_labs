@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .message{
+            margin-bottom: 10px;
+            width: 200px;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        .buttonDelete{
+            position: absolute;
+            display: block;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+        }
+        .first{
+            background: rgba(186,253,255,0.55);
+        }
+        .second{
+            background: rgba(103,255,118,0.55);
+        }
+        .third{
+            background: rgba(255,245,0,0.55);
+        }
+    </style>
+</head>
+<body>
+    <div class="message first">
+        <h3>Привет!</h3>
+        <p>Текст первого сообщения.</p>
+    </div>
+    <div class="message second">
+        <h3>Привет!</h3>
+        <p>Текст второго сообщения.</p>
+    </div>
+    <div class="message third">
+        <h3>Привет!</h3>
+        <p>Текст третьего сообщения.</p>
+    </div>
+
+    <script>
+        var messages = document.getElementsByClassName('message');
+        for(let message of messages){
+            message.insertAdjacentHTML("afterbegin", '<button class="buttonDelete">X</button>')
+            message.firstChild.onclick = function (){message.style.display = 'none';}
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="https://vashkinolog.com/wp-content/uploads/2019/09/festival_sobak_velsh-korgi_v_loft_proekt_etazhi.jpg" width="500px" height="380px" id="image">
+    <br>
+    <input type="button" value="start" onclick="start()">
+    <input type="button" value="pause" onclick="pause()">
+<script>
+    var arr=['https://vashkinolog.com/wp-content/uploads/2019/09/festival_sobak_velsh-korgi_v_loft_proekt_etazhi.jpg',
+        'https://vplate.ru/images/article/orig/2019/04/chto-edyat-taksy.jpg',
+        'https://amazing-animals.ru/wp-content/uploads/2018/07/14075138_1149011291830177_220569860_o.jpg',
+        'https://decordog.ru/wp-content/uploads/2019/01/bolezni-labradora-1024x683.jpg',
+        'https://cs11.pikabu.ru/post_img/2019/04/26/11/og_og_1556308511284747041.jpg'];
+    var number = 0;
+
+    function start(){
+        window.timer = window.setInterval(slide, 1000);
+    }
+    function slide(){
+        if(number == 5)
+            number = 0;
+        image = document.getElementById('image');
+        image.src = arr[number];
+        number++;
+    }
+    function pause(){
+        window.clearInterval(window.timer);
+    }
+</script>
+</body>
+</html>

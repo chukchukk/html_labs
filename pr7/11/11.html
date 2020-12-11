@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <style>
+        .carousel {
+            position: relative;
+            width: 400px;
+            padding: 5px 30px;
+            background: #fdedff;
+            border-radius: 10px;
+        }
+
+        .carousel img {
+            width: 130px;
+            height: 130px;
+        }
+
+        .carousel .arrow {
+            position: absolute;
+            top: 40%;
+            background: #d30eff;
+            border-radius: 15px;
+            border: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .arrow:hover {
+            background: #59207c;
+        }
+
+        .arrow:focus{
+            outline: none;
+        }
+        .prev {
+            left: 1px;
+        }
+
+        .next {
+            right: 1px;
+        }
+
+        .gallery {
+            width: 390px;
+            overflow: hidden;
+        }
+
+        .gallery ul {
+            height: 140px;
+            width: 5000px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            transition: all 1s;
+        }
+
+        .gallery li {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="carousel" class="carousel">
+    <button class="arrow prev"><</button>
+    <div class="gallery">
+        <ul class="images">
+            <li><img src="https://clipart-best.com/img/balloon/balloon-clip-art-8.png"></li>
+            <li><img src="https://clipart-best.com/img/wolf/wolf-clip-art-48.png"></li>
+            <li><img src="https://avatanplus.com/files/resources/original/573079573ff0e1549559fcde.png"></li>
+            <li><img src="https://clipart-db.ru/file_content/rastr/tiger_001.png"></li>
+            <li><img src="https://pngicon.ru/file/uploads/golub-768x811.png"></li>
+            <li><img src="https://clipart-best.com/img/whale/whale-clip-art-28.png"></li>
+            <li><img src="https://clipart-best.com/img/birds/birds-clip-art-72.png"></li>
+            <li><img src="https://clipart-best.com/img/polar-bear/polar-bear-clip-art-28.png"></li>
+        </ul>
+    </div>
+    <button class="arrow next">></button>
+</div>
+
+<script>
+    let i = 1;
+    let lis = carousel.querySelectorAll('li');
+    for(let li of lis) {
+        li.style.position = 'relative';
+        i++;
+    }
+
+    let width = 130;
+    let count = 3;
+
+    let list = carousel.querySelector('ul');
+    let listElems = carousel.querySelectorAll('li');
+
+    let position = 0;
+
+    carousel.querySelector('.prev').onclick = function() {
+        position += width * count;
+        position = Math.min(position, 0)
+        list.style.marginLeft = position + 'px';
+    };
+
+    carousel.querySelector('.next').onclick = function() {
+        position -= width * count;
+        position = Math.max(position, -width * (listElems.length - count));
+        list.style.marginLeft = position + 'px';
+    };
+</script>
+
+</body>
+</html>

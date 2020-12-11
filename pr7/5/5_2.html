@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="text1">
+    +
+    <input type="text" id="text2">
+    =
+    <span id="result">0</span>
+    <br><br>
+    <input type="button" value="Нажмите, чтобы сложить" onclick="getResult()">
+    <script>
+        function getResult(){
+            let text1 = document.getElementById('text1').value;
+            let text2 = document.getElementById('text2').value;
+            let result = document.getElementById('result');
+            result.innerHTML = parseInt(text1) + parseInt(text2);
+        }
+    </script>
+</body>
+</html>

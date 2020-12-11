@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="count">0</h1>
+    <input type="button" value="START" onclick="start()">
+    <script>
+        function start(){
+            window.setInterval(plus, 1000)
+        }
+        function plus(){
+            let text = document.getElementById('count');
+            text.innerHTML = parseInt(text.textContent) + 1;
+        }
+    </script>
+</body>
+</html>

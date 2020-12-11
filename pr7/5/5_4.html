@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: fit-content;
+        }
+        a{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://google.ru">ссылка 1</a>
+    <a href="http://tut.by">ссылка 2</a>
+    <a href="http://yandex.ru">ссылка 3</a>
+    <input type="button" value="Нажмите на меня!"  onclick="show()">
+    <script>
+        function show(){
+            var a = document.getElementsByTagName('a');
+            for (var i = 0; i < a.length; i++){
+                a[i].innerHTML = a[i].innerHTML+' ('+a[i].getAttribute('href')+')';
+            }
+        }
+    </script>
+</body>
+</html>

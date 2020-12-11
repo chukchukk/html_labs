@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <style>
+        input {
+            width: 200px;
+        }
+    </style>
+    <script>
+        function show(elem){
+            var text = document.getElementById('textAfter');
+            text.innerHTML = elem.value;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Пример" id="text" onkeyup="show(this)">
+    <span id="textAfter"></span>
+</body>
+</html>

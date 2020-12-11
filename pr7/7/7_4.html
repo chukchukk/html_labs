@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="https://vashkinolog.com/wp-content/uploads/2019/09/festival_sobak_velsh-korgi_v_loft_proekt_etazhi.jpg" width="500px" height="380px" id="image">
+    <script>
+        var arr=['https://vashkinolog.com/wp-content/uploads/2019/09/festival_sobak_velsh-korgi_v_loft_proekt_etazhi.jpg',
+                    'https://vplate.ru/images/article/orig/2019/04/chto-edyat-taksy.jpg',
+                        'https://amazing-animals.ru/wp-content/uploads/2018/07/14075138_1149011291830177_220569860_o.jpg',
+                            'https://decordog.ru/wp-content/uploads/2019/01/bolezni-labradora-1024x683.jpg'];
+        var number = 0;
+        window.onload = function(){
+            window.setInterval(function(){
+                if(number == 4)
+                    number = 0;
+                image = document.getElementById('image');
+                image.src = arr[number];
+                number++;
+            }, 2000);
+        };
+    </script>
+</body>
+</html>

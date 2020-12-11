@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            display: inline;
+            margin-right: 5px;
+            padding: 3px;
+        }
+        li img{
+            width: 70px;
+            height: 70px;
+            border: 2px solid black;
+        }
+        p img{
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+<p><img id="mainImg" src="https://clipart-best.com/img/balloon/balloon-clip-art-8.png"></p>
+
+<ul id="otherImgs">
+    <li>
+        <a href="https://clipart-best.com/img/balloon/balloon-clip-art-8.png"><img src="https://clipart-best.com/img/balloon/balloon-clip-art-8.png"></a>
+    </li>
+    <li>
+        <a href="https://clipart-best.com/img/wolf/wolf-clip-art-48.png"><img src="https://clipart-best.com/img/wolf/wolf-clip-art-48.png"></a>
+    </li>
+    <li>
+        <a href="https://avatanplus.com/files/resources/original/573079573ff0e1549559fcde.png"><img src="https://avatanplus.com/files/resources/original/573079573ff0e1549559fcde.png"></a>
+    </li>
+    <li>
+        <a href="https://clipart-db.ru/file_content/rastr/tiger_001.png"><img src="https://clipart-db.ru/file_content/rastr/tiger_001.png"></a>
+    </li>
+    <li>
+        <a href="https://pngicon.ru/file/uploads/golub-768x811.png"><img src="https://pngicon.ru/file/uploads/golub-768x811.png"></a>
+    </li>
+</ul>
+
+<script>
+    otherImgs.onclick = function(event) {
+        let current = event.target.closest('a');
+
+        if (!current)
+            return;
+        show(current.href);
+        event.preventDefault();
+    }
+
+    function show(href) {
+        mainImg.src = href;
+    }
+</script>
+
+</body>
+</html>

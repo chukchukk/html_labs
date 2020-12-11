@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <script>
+        window.onload = function (){
+            window.timerId = window.setInterval(timeRemain, 1000);
+        };
+        function timeRemain(){
+            var h = document.getElementById('hours');
+            var m = document.getElementById('minutes');
+            var s = document.getElementById('seconds');
+
+            var now = new Date();
+            var midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1, 0, 0, 0);
+            var diff =  Math.floor((midnight - now)/1000);
+
+            var hoursRemain   = Math.floor(diff/(60*60));
+            var minutesRemain = Math.floor((diff-hoursRemain*60*60)/60);
+            var secondsRemain = Math.floor(diff%60);
+
+            h.innerHTML = beforeZero(hoursRemain);
+            m.innerHTML = beforeZero(minutesRemain);
+            s.innerHTML = beforeZero(secondsRemain);
+        }
+        function beforeZero(num){
+            if(num <=9)
+                return '0'+num;
+            else
+                return num;
+        }
+    </script>
+</head>
+<body>
+    <p>До полуночи:</p>
+    <span id="hours"> </span>
+    :
+    <span id="minutes"> </span>
+    :
+    <span id="seconds"> </span>
+</body>
+</html>

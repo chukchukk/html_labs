@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="text">
+        РТУ МИРЭА. Пономарев Денис Николаевич
+    </p>
+    <input type="button" value="Меняем" onclick="change()">
+    <script>
+        function change(){
+            let text = document.getElementById('text');
+            text.innerHTML = '<h1><i>ВГТУ. Тарасов Евгений</i></h1>'
+        }
+    </script>
+</body>
+</html>
